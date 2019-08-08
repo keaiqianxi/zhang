@@ -1,0 +1,208 @@
+@function px2rem($px, $rem:75) {
+    @return $px / $rem * 1rem;
+}
+
+html,
+body,
+#app {
+    height: 100%;
+}
+
+#app {
+    font-size: 15px;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    >header {
+        display: flex;
+        justify-content: space-between;
+        height: px2rem(93);
+        line-height: px2rem(93);
+        background-color: #fff;
+        border-bottom: 1px solid;
+        >span {
+            font-size: px2rem(40);
+            &:first-child,
+            &:last-child {
+                margin-left: 10px;
+            }
+        }
+    }
+    >section {
+        flex: 1;
+        overflow-y: auto;
+        background-color: #f6f6f6;
+        >.content {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            >.content-nav {
+                height: px2rem(225);
+                background-image: url('../../images/background.png');
+                background-repeat: no-repeat;
+                >dl {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    margin: px2rem(30) 0 0 px2rem(30);
+                    >dt {
+                        
+                        img {
+                            width: px2rem(120);
+                            height: px2rem(120);
+                            border-radius: 100px;
+                        }
+                    }
+                    >dd {
+                        margin: px2rem(35) px2rem(18);
+                        color: white;
+                        >span {
+                            display: inline-block;
+                            padding: px2rem(15) 0;
+                        }
+                        >p {
+                            width: px2rem(263);
+                            height: px2rem(44);
+                            background-color: #b8ac82;
+                            border-radius: 12px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            >.dingdan{
+                display: flex;
+                flex-direction: column;
+                height: px2rem(260);
+                padding-top: px2rem(10);
+                // background-color: #f6f6f6;
+                // flex: 1;
+                >.top {
+                    display: flex;
+                    justify-content: space-between;
+                    height: px2rem(88);
+                    line-height: px2rem(88);
+                    border-bottom: 1px solid #e1e1e1;
+                    >span {
+                        margin-left: px2rem(28);
+                        font-size: px2rem(34);
+                        &:last-child {
+                            margin-right: px2rem(28);
+                            color: #acacac;
+                            font-size: px2rem(30);
+                        }
+                    }
+                }
+                >.button {
+                    flex: 1;
+                    >ul {
+                        display: flex;
+                        justify-content: space-around;
+                        margin: px2rem(24) 0;
+                        // text-align: center;
+                        >li {
+                            >img {
+                                display: block;
+                                width: 100%;
+                            }
+                            >span {
+                                display: inline-block;
+                                margin-top: px2rem(22);
+                                font-size: px2rem(23);
+                            }
+                        }
+                    }
+                }
+            }
+            >.text {
+                padding-top: px2rem(10);
+                background-color: #f6f6f6;
+                >div {
+                    height: px2rem(167);
+                    background-color: white;
+                    border-bottom: 1px solid #e1e1e1;
+                    >ul {
+                        display: flex;
+                        justify-content: space-around;
+                        // margin: px2rem(24) 0;
+                        >li {
+                            margin-top: px2rem(36);
+                            >img {
+                                display: block;
+                            }
+                            >span {
+                                display: inline-block;
+                                margin-top: px2rem(15);
+                                font-size: px2rem(23);
+                            }
+                        }
+                    }
+                }
+            }
+            >.tuijian {
+                display: flex;
+                flex-wrap: wrap;
+                padding-top: px2rem(10);
+                background-color: #f6f6f6;
+                >div {
+                    background-color: white;
+                    >.header {
+                        height: px2rem(150);
+                        text-align: center;
+                        >span {
+                            line-height: px2rem(150);
+                            font-size: px2rem(38);
+                            font-weight: 600;
+                            text-align: center;
+                        }
+                    }
+                    >ul {
+                        display: flex;
+                        justify-content: space-evenly;
+                        >li {
+                            width: 45%;
+                            >img {
+                                width: 100%;
+                            }
+                            >h3 {
+                                font-weight: 600;
+                                font-size: px2rem(32);
+                            }
+                            >p {
+                                color: #acacac;
+                                padding: px2rem(5) 0;
+                                &:last-child {
+                                    color: red;
+                                    font-size: px2rem(29);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >footer {
+        height: px2rem(110);
+        background-image: url("../../images/footer-bg.jpg");
+        background-repeat: no-repeat;
+        font-size: 100%;
+        >ul {
+            display: flex;
+            justify-content: space-around;
+            padding-top: px2rem(20);
+            >li {
+                text-align: center;
+                >img {
+                    height: px2rem(60);
+                    display: block;
+                }
+                >.li.active {
+                    color: red;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,234 @@
+html,
+body,
+#app {
+  height: 100%;
+}
+
+#app {
+  font-size: 15px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+#app > header {
+  display: flex;
+  justify-content: space-between;
+  height: 1.24rem;
+  line-height: 1.24rem;
+  background-color: #fff;
+  border-bottom: 1px solid;
+}
+
+#app > header > span {
+  font-size: 0.53333rem;
+}
+
+#app > header > span:first-child, #app > header > span:last-child {
+  margin-left: 10px;
+}
+
+#app > section {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #f6f6f6;
+}
+
+#app > section > .content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+#app > section > .content > .content-nav {
+  height: 3rem;
+  background-image: url("../../images/background.png");
+  background-repeat: no-repeat;
+}
+
+#app > section > .content > .content-nav > dl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0.4rem 0 0 0.4rem;
+}
+
+#app > section > .content > .content-nav > dl > dt img {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 100px;
+}
+
+#app > section > .content > .content-nav > dl > dd {
+  margin: 0.46667rem 0.24rem;
+  color: white;
+}
+
+#app > section > .content > .content-nav > dl > dd > span {
+  display: inline-block;
+  padding: 0.2rem 0;
+}
+
+#app > section > .content > .content-nav > dl > dd > p {
+  width: 3.50667rem;
+  height: 0.58667rem;
+  background-color: #b8ac82;
+  border-radius: 12px;
+  text-align: center;
+}
+
+#app > section > .content > .dingdan {
+  display: flex;
+  flex-direction: column;
+  height: 3.46667rem;
+  padding-top: 0.13333rem;
+}
+
+#app > section > .content > .dingdan > .top {
+  display: flex;
+  justify-content: space-between;
+  height: 1.17333rem;
+  line-height: 1.17333rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+#app > section > .content > .dingdan > .top > span {
+  margin-left: 0.37333rem;
+  font-size: 0.45333rem;
+}
+
+#app > section > .content > .dingdan > .top > span:last-child {
+  margin-right: 0.37333rem;
+  color: #acacac;
+  font-size: 0.4rem;
+}
+
+#app > section > .content > .dingdan > .button {
+  flex: 1;
+}
+
+#app > section > .content > .dingdan > .button > ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.32rem 0;
+}
+
+#app > section > .content > .dingdan > .button > ul > li > img {
+  display: block;
+  width: 100%;
+}
+
+#app > section > .content > .dingdan > .button > ul > li > span {
+  display: inline-block;
+  margin-top: 0.29333rem;
+  font-size: 0.30667rem;
+}
+
+#app > section > .content > .text {
+  padding-top: 0.13333rem;
+  background-color: #f6f6f6;
+}
+
+#app > section > .content > .text > div {
+  height: 2.22667rem;
+  background-color: white;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+#app > section > .content > .text > div > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#app > section > .content > .text > div > ul > li {
+  margin-top: 0.48rem;
+}
+
+#app > section > .content > .text > div > ul > li > img {
+  display: block;
+}
+
+#app > section > .content > .text > div > ul > li > span {
+  display: inline-block;
+  margin-top: 0.2rem;
+  font-size: 0.30667rem;
+}
+
+#app > section > .content > .tuijian {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0.13333rem;
+  background-color: #f6f6f6;
+}
+
+#app > section > .content > .tuijian > div {
+  background-color: white;
+}
+
+#app > section > .content > .tuijian > div > .header {
+  height: 2rem;
+  text-align: center;
+}
+
+#app > section > .content > .tuijian > div > .header > span {
+  line-height: 2rem;
+  font-size: 0.50667rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#app > section > .content > .tuijian > div > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#app > section > .content > .tuijian > div > ul > li {
+  width: 45%;
+}
+
+#app > section > .content > .tuijian > div > ul > li > img {
+  width: 100%;
+}
+
+#app > section > .content > .tuijian > div > ul > li > h3 {
+  font-weight: 600;
+  font-size: 0.42667rem;
+}
+
+#app > section > .content > .tuijian > div > ul > li > p {
+  color: #acacac;
+  padding: 0.06667rem 0;
+}
+
+#app > section > .content > .tuijian > div > ul > li > p:last-child {
+  color: red;
+  font-size: 0.38667rem;
+}
+
+#app > footer {
+  height: 1.46667rem;
+  background-image: url("../../images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  font-size: 100%;
+}
+
+#app > footer > ul {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.26667rem;
+}
+
+#app > footer > ul > li {
+  text-align: center;
+}
+
+#app > footer > ul > li > img {
+  height: 0.8rem;
+  display: block;
+}
+
+#app > footer > ul > li > .li.active {
+  color: red;
+}
